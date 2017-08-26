@@ -1,0 +1,84 @@
+.contact-content{
+  width: 85%;
+  padding: 1rem 0 0;
+  text-align: center;
+  color: white;
+  margin:0 auto;
+  font-family: "宋体";
+  font-size:20px;
+}
+.contact-content h1{
+  font-size: 24px;
+}
+.clear {
+  clear: both;
+}
+input{
+
+  width:40%;
+  background: hsla(0,0%,100%,.05);
+  border: 1px solid #666666;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 35px;
+  line-height: 35px;
+  padding: 5px 10px 5px 10px;
+}
+textarea{
+  width:80%;
+  background: hsla(0,0%,100%,.05);
+  border: 1px solid #666666;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  margin-left: -12px;
+  height: 55px;
+  line-height: 35px;
+  padding: 5px 10px 5px 10px;
+}
+.nullCon{
+  height: 15px;
+}
+button{
+  width: 15%;
+}
+button:hover {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: disco;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-name: disco;
+}
+@-webkit-keyframes disco {
+  0%    { -webkit-filter: drop-shadow(0 0 8px rgba(255,153,153,1)); }
+  25%  { -webkit-filter: drop-shadow(0 0 8px rgba(244,241,66,1)); }
+  50%  { -webkit-filter: drop-shadow(0 0 8px rgba(0,153,255,1)); }
+  75%  { -webkit-filter: drop-shadow(0 0 8px rgba(244,66,232,1)); }
+  100%    { -webkit-filter: drop-shadow(0 0 8px rgba(255,153,153,1)); }
+}
+
+.footer h1{
+  line-height: 32px;
+  font-size: 32px;
+}
+.icon-location {
+  background: url('http://www.guoaihua.com/static/fonts/location.svg') no-repeat;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.icon-email {
+  background: url('http://www.guoaihua.com/static/fonts/email.svg') no-repeat;
+  display: inline-block;
+  width: 39px;
+  height: 24px;
+}
+.icon-phone {
+  background: url('http://www.guoaihua.com/static/fonts/phone.svg') no-repeat;
+  display: inline-block;
+  width: 37px;
+  height: 35px;
+}

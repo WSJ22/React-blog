@@ -1,0 +1,238 @@
+body{
+  color: white;
+}
+.address a {
+  text-decoration: none;
+}
+/* 线框流动开始 */
+.line {
+  position: relative;
+}
+
+.line:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  border: 2px solid skyblue;
+  animation: lineOne 8s linear infinite;
+  animation-delay:-4s;
+  z-index: 199;
+}
+@keyframes lineOne {
+  0%,100%{clip:rect(0,400px,2px,0)}
+  25%{clip:rect(0,2px,329px,0)}
+  50%{clip:rect(326px,400px,329px,2px)}
+  75%{clip:rect(0,400px,328px,396px)}
+}
+
+.line:hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid skyblue;
+  animation-delay: 4s;
+  animation: lineTwo 8s linear infinite;
+  z-index: 99;
+}
+@keyframes lineTwo {
+  0%,100%{clip:rect(0,400px,2px,0)}
+  25%{clip:rect(0,2px,329px,0)}
+  50%{clip:rect(326px,400px,329px,2px)}
+  75%{clip:rect(0,400px,328px,396px)}
+}
+/* 线框流动结束 */
+/* 特效文字掉落 */
+.split-line {
+  margin-top: 15%;
+}
+.rw-words {
+  text-indent: 10px;
+  /* 	overflow: hidden; */
+  position: relative;
+}
+.rw-words span {
+  display: inline;
+  white-space: nowrap;
+  position: absolute;
+  top: -15px;
+  padding-top: 10px;
+  color: white;
+  opacity: 0;
+  overflow: hidden;
+  color: #888;
+  -webkit-transform-origin: 10% 75%;
+  transform-origin: 10% 75%;
+  -webkit-animation: rotateWord 18s linear infinite 0s;
+  -ms-animation: rotateWord 18s linear infinite 0s;
+  animation: rotateWord 18s linear infinite 0s;
+}
+.rw-words span:nth-child(2) {
+  -webkit-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
+  color: #6b889d;
+}
+.rw-words span:nth-child(3) {
+  -webkit-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+  color: #6b739d;
+}
+.rw-words span:nth-child(4) {
+  -webkit-animation-delay: 9s;
+  -ms-animation-delay: 9s;
+  animation-delay: 9s;
+  color: #7a6b9d;
+}
+.rw-words span:nth-child(5) {
+  -webkit-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  animation-delay: 12s;
+  color: #8d6b9d;
+}
+.rw-words span:nth-child(6) {
+  -webkit-animation-delay: 15s;
+  -ms-animation-delay: 15s;
+  animation-delay: 15s;
+  color: #9b6b9d;
+}
+@keyframes rotateWord {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  17% { opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  19% { opacity: 1; -webkit-transform: rotate(98deg); transform: rotate(98deg); }
+  21% { opacity: 1; -webkit-transform: rotate(86deg); transform: rotate(86deg); }
+  23% { opacity: 1; -webkit-transform: translateY(85px) rotate(83deg); transform: translateY(85px) rotate(83deg); }
+  25% { opacity: 0; -webkit-transform: translateY(170px) rotate(80deg); transform: translateY(170px) rotate(80deg); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+/* 特效文字掉落结束 */
+.home {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+.box {
+  width: 75%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.intro {
+  position: absolute;
+  top: 12%;
+  left: -13%;
+  width:51%;
+  background:rgba(33, 185, 236, 0);
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.scrollText {
+  height: 50%;
+  position: absolute;
+  right: -13%;
+  top: 26%;
+  margin-left: 10rem;
+  color: rgba(240, 248, 253, 0.76);
+}
+
+
+.intro .line {
+  /* 	border:4px double white;  */
+  padding: 1.1rem 1rem 0.5rem 1.5rem;
+  font-family: "宋体";
+  /* 	background: red; */
+}
+.line h3 {
+  color: white;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.line-inblock {
+  list-style: none;
+}
+.line-inblock li {
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  padding-bottom: 0;
+  margin-right: 5%;
+}
+marquee{
+  position: absolute;
+  right: -3%;
+  top:37%;
+  font-size: 18px;
+  padding: 10px;
+  line-height: 28px;
+  width:60%;
+}
+.link{
+  color: red;
+}
+@media (max-width: 1366px) {
+  .box {
+    width: 67%;
+    padding: 1rem 0 0;
+  }
+  .box img {
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 1080px) {
+  .box img {
+    margin-left: 8rem;
+  }
+
+  .intro {
+    top: 9%;
+    width: 73%;
+    padding: 1rem;
+  }
+}
+@media (max-width: 991px) {
+  .intro {
+    top:5%;
+  }
+  .box {
+    padding: 2rem 0 0;
+  }
+  .scrollText {
+    top: 32%;
+  }
+}
+@media (max-width: 667px) {
+  .intro {
+    top:auto;
+    left: 0;
+    width: 100%;
+  }
+  .box img {
+    margin-left: 0;
+  }
+  .scrollText {
+    top: 33%;
+    right: 24%;
+  }
+}
+@media (max-width: 493px) {
+  .box {
+    width: 80%;
+    padding: 0;
+  }
+  .scrollText {
+    top: 28%;
+    right: 5%;
+    margin-left:2rem;
+  }
+}

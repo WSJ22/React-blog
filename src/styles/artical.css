@@ -1,0 +1,67 @@
+.article{
+  width: 75%;
+  padding: 1rem 0 0;
+  color: black;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: "宋体";
+}
+.text-white{
+  color: rgba(255, 255, 255, 0.91);
+}
+.clear {
+  clear: both;
+}
+.title{
+  float: right;
+  margin-right: 3rem;
+}
+.content-main{
+  margin-top: 20%;
+  margin-left: 50%;
+  width: 60%;
+}
+.skills{
+  margin-top: -30%;
+}
+.skill-title{
+  width: 100px;
+  margin-top: 37%;
+  color: white;
+  line-height: 36px;
+  position: absolute;
+  left: -25%;
+}
+.stars {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  animation: moverandom 10s cubic-bezier(.40,.82,.80,.34) infinite;
+}
+@keyframes moverandom {
+  0%{right: 100px;display: none;}
+  100%{right: 100%;}
+}
+
+@media (min-width: 493px) and (max-width: 978px){
+  .skills{
+    width: 80%;
+    margin-top: 10%;
+    margin-left:41%;
+
+  }
+  .article{
+    text-align: center;
+  }
+  .title{
+    float: none;
+  }
+  .content{
+    width:130%;
+    text-align: center;
+    position: relative;
+    margin-left: -58%;
+    margin-top: -20%;
+  }
+
+}

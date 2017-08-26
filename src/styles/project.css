@@ -1,0 +1,112 @@
+h4{
+  font-weight: normal;
+  font-size: 18px;
+}
+.address{
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+.address a{
+  text-decoration: none;
+  color: #ccc;
+}
+.address a:hover {
+  color: skyblue;
+}
+.project{
+  width: 90%;
+  padding: 1rem 0 0;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+.text3d{
+  color: #3d3d3d;
+  font-weight: bold;
+  font-size: 36px;
+  text-shadow: 0 -1px 0 #858585, 0 1px 10px rgba(0,0,0,.6), 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.2), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 7px 10px rgba(0,0,0,.25), 0 15px 10px rgba(0,0,0,.2), 0 25px 15px rgba(0,0,0,.15)
+}
+.clear{
+  clear: both;
+}
+
+.col-md-4{
+  position: relative;
+}
+.boxsTwo,.boxsOne{
+  display: flex;
+  margin-left: -13%;
+  flex: 1;
+  margin-bottom: 30px;
+}
+.shadow{
+  width: 33%;
+  margin-bottom: -4%;
+  margin-right:30px;
+  justify-content: center;
+}
+.img-responsive{
+  width: 360px;
+  height: 175px;
+}
+.col-md-4 {
+  position: relative;
+}
+.mask {
+  position: absolute;
+  left: 113.5%;
+  top: 0;
+  width: 138%;
+  height: 100%;
+  border: 0px solid rgba(0,0,0,0.7);
+  overflow: visible;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+  opacity: 0;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.mask:hover {
+  opacity: 1;
+  padding: 0!important;
+  border:50px solid rgba(35, 214, 231, 0.64);
+  background: rgba(0, 0, 0, 0.45);
+}
+.mask a {
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  font-size:1em;
+  color: #fff;
+}
+.shadow img {
+  box-shadow:1px -1px 10px #2bb7c5, -2px 1px 10px #2bb7c5;
+}
+.img-responsive{
+  display: block;
+  /* max-width: 100%; */
+  height: auto;
+}
+
+@media (max-width: 1388px) {
+  .box1{
+    width:90%;
+    margin:0 auto;
+    margin-bottom:55px;
+  }
+  .mask {
+    position: absolute;
+    left: 4.5%;
+    top: 0;
+    width: 91%;
+    height: 100%;
+    border: 0px solid rgba(0,0,0,0.7);
+    overflow: visible;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    opacity: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+}

@@ -1,0 +1,115 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'OpenSymbol',scan-serif,"宋体";
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  resize: none;
+}
+body{
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.clear{
+  clear: both;
+}
+.header{
+  color: white;
+}
+.logoname{
+  padding-bottom: 10px;
+  display: inline-block;
+
+  margin-top: 20px;
+  font-family: 'OpenSymbol',scan-serif,"宋体";
+  font-size: 2.6rem;
+  font-weight: normal;
+  text-align: center;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-size:200% 120%;
+  background-image: -webkit-linear-gradient(left,#df21f5 , skyblue 25%, orange 50%, #000a80 75% , #df21f5);
+  animation: content-animation 4s infinite linear;
+}
+@keyframes content-animation {
+  0%{background-position: 0,0}
+  100%{background-position: -100% 0;}
+}
+.header ul{
+  list-style: none;
+  width: 60%;
+  float: right;
+}
+.header ul li {
+  float: right;
+  width: 20%;
+  padding-top:2.5rem;
+  color: white;
+  font-size: 14px;
+}
+.header ul li a{
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+.music-fly {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.music-fly:hover {
+  cursor: pointer;
+}
+@media (min-width: 493px) and (max-width: 978px){
+  .logoname {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .header ul {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .header ul li {
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 384px) {
+  .logoname {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    font-size: 2rem;;
+  }
+  .header ul{
+    float: none;
+    text-align: center;
+    margin-left: 20px;
+  }
+  .header ul li {
+    width: 100%;
+    float: none;
+    padding-top:0rem;
+    padding: 0.3rem;
+  }
+  .header ul li a {
+    color: white;
+  }
+  .header ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .header ul li:hover {
+    background-color: #23D6E7;
+  }
+  .router-link-active {
+    color: skyblue!important;
+  }
+}
+
+
